@@ -1,7 +1,7 @@
 import React from 'react'
 import assets from '../assets/assets'
 import Title from './Title'
-import Servicecard from './Servicecard'
+import ServiceCard from "./ServiceCard";
 import { motion } from "motion/react"
 
 
@@ -42,7 +42,7 @@ const Services = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl'>
                 {servicesData.map((service,index)=>(
-                    <Servicecard key={index} service={service} index={index}/>
+                    <ServiceCard key={index} service={service} index={index}/>
                 ))}
             </div>
         </motion.div>
